@@ -54,13 +54,20 @@ struct LiveStockView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                if vm.coins.isEmpty {
+                    AnimatedImage(name: "catt.svg")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 250, height: 250)
+                } else {
+                    Image("bg")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .scaledToFill()
+                        .blur(radius: 10)
+                        .opacity(0.8)
+                }
                 
-                Image("bg")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                    .blur(radius: 10)
-                    .opacity(0.8)
                 
                 if vm.isLoading {
                     ProgressView("Loading...")
@@ -71,7 +78,7 @@ struct LiveStockView: View {
                             .frame(width: 150, height: 150)
                 }
                 
-                
+               
                 
                 VStack {
                     List {

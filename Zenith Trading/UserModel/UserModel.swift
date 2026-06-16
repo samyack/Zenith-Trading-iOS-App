@@ -22,4 +22,5 @@ struct TradeModel: Identifiable {
     var entryPrice: Double
     var margin: Double
     var isOpen: Bool
+    var exitedAt: Double
 }

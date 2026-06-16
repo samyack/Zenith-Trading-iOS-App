@@ -25,6 +25,7 @@ struct OpenPositionView: View {
         }
     }
     
+    
     var body: some View {
         
         NavigationStack {

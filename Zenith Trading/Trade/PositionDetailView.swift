@@ -35,7 +35,7 @@ struct PositionDetailView: View {
             HStack {
                 Text("Entry Price:")
                 Spacer()
-                Text("\(trade.margin, specifier: "%.2f")")
+                Text("\(trade.entryPrice, specifier: "%.2f")")
             }
             .padding(.bottom, 10)
             Divider()
@@ -69,10 +69,11 @@ struct PositionDetailView: View {
         .padding(30)
         .task {
             await coinVM.fetchCoins()
+            await vm.fetchTrades()
         }
     }
 }
 
-#Preview {
-    PositionDetailView(trade: .init(id: "1", coinName: "Bit", type: 1, units: 2, entryPrice: 100, margin: 200,isOpen: true))
-}
+//#Preview {
+//    PositionDetailView(trade: .init(id: "1", coinName: "Bit", type: 1, units: 2, entryPrice: 100, margin: 200,isOpen: true))
+//}

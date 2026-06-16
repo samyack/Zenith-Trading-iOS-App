@@ -42,7 +42,8 @@ class OpenPositionViewModel: ObservableObject {
                                       units: data["units"] as! Int,
                                       entryPrice: data["entryPrice"] as! Double,
                                       margin: data["totalPrice"] as! Double,
-                                      isOpen: data["isOpen"] as! Bool
+                                      isOpen: data["isOpen"] as! Bool,
+                                      exitedAt: data["exitedAt"] as! Double
                     )
                 })
                 
@@ -124,7 +125,8 @@ class OpenPositionViewModel: ObservableObject {
                                       units: data["units"] as! Int,
                                       entryPrice: data["entryPrice"] as! Double,
                                       margin: data["totalPrice"] as! Double,
-                                      isOpen: data["isOpen"] as! Bool
+                                      isOpen: data["isOpen"] as! Bool,
+                                      exitedAt: data["exitedAt"] as! Double
                     )
                 })
                 

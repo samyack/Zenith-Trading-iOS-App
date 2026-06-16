@@ -15,23 +15,30 @@ struct HistoryTradeView: View {
     
     var body: some View {
         VStack {
+            Text("Trade History")
+                .font(.largeTitle)
+                .bold()
             FloatingGlassPanel {
                 List {
                     ForEach(vm.trades) { trade in
                         HStack {
                             Text(trade.coinName)
-                                .font(.headline)
+                                .font(.title)
                             Spacer()
-                            Text("+10")
+                            Text("\(trade.exitedAt, specifier: "%.2f")")
+                                .font(.title)
+                                .foregroundStyle(trade.exitedAt >= 0 ? .green : .red)
+                                .bold()
                         }
                         
                     }
                 }
+                .scrollContentBackground(.hidden)
             }
         }
+        .padding(20)
         .task {
             await vm.tradeHistory()
-//            await coinVM.fetchCoins()
         }
     }
 }

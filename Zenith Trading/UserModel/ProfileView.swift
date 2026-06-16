@@ -13,7 +13,17 @@ struct ProfileView: View {
     @StateObject private var vm = ProfileViewModel()
     @StateObject var authViewModel  = AuthViewModel()
     @StateObject private var openPosVM = OpenPositionViewModel()
+    @State var open = OpenPositionView()
+
+    @StateObject private var coinVM = CoinsViewModel()
     
+    var totalUnrealisedPnL: Double {
+        openPosVM.trades.reduce(0) { total, trade in
+            let currentPrice = coinVM.getPrice(for: trade.coinName)
+            let pnl = openPosVM.calculatePnL(trade: trade, currentPrice: currentPrice)
+            return total + pnl
+        }
+    }
 
     
     var body: some View {
@@ -62,8 +72,8 @@ struct ProfileView: View {
                 
                 // MARK: - User Name
                
-                    
-                    ContainerBox(margin: user.money, unrealisedPnL: 100)
+                   
+                    ContainerBox(margin: user.money, unrealisedPnL: totalUnrealisedPnL)
                     
             
                     
@@ -83,6 +93,10 @@ struct ProfileView: View {
     }
         .onAppear {
             vm.fetchUser()
+            Task {
+                    await openPosVM.fetchTrades()
+                    await coinVM.fetchCoins()
+                }
         }
     }
 }
