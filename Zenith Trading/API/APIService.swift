@@ -61,26 +61,6 @@ final class APIService {
             return []
         }
     }
-    
-    
-//    func fetchCoin() async -> [Coins] {
-//        let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=layer-1&price_change_percentage=1h&precision=3")
-//        
-//        guard let url = url else { return [] }
-//        
-//        do {
-//            var request = URLRequest(url: url)
-//            request.httpMethod = "GET"
-//            request.setValue("CG-9sWpLi8vo4DKD5979oHDSTEr", forHTTPHeaderField: "x-cg-demo-api-key")
-//            
-//            let (data, _) = try await URLSession.shared.data(for: request)
-//            let decoded = try JSONDecoder().decode([Coins].self, from: data)
-//            return decoded
-//        } catch {
-//            print("Error: \(error.localizedDescription)")
-//            return []
-//        }
-//    }
 }
 
 
