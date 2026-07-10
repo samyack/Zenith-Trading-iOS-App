@@ -6,6 +6,15 @@ The app provides real-time market data, allows users to open Buy/Sell positions,
 
 ---
 
+
+# 🎥 Demo
+
+Watch the complete demo below.
+
+https://github.com/user-attachments/assets/04f3c4f7-96f5-489b-99e5-eac736ea061b
+
+---
+
 # ✨ Features
 
 - 🔐 Firebase Authentication
@@ -32,14 +41,6 @@ The app provides real-time market data, allows users to open Buy/Sell positions,
 | Open Positions | Profile | Authentication |
 |----------------|---------|----------------|
 | Add Screenshot | Add Screenshot | Add Screenshot |
-
----
-
-# 🎥 Demo
-
-Watch the complete demo below.
-
-https://github.com/user-attachments/assets/04f3c4f7-96f5-489b-99e5-eac736ea061b
 
 ---
 
