@@ -39,7 +39,7 @@ The app provides real-time market data, allows users to open Buy/Sell positions,
 
 Watch the complete demo below.
 
-https://github.com/samyack/Zenith-Trading-iOS-App/issues/1
+https://github.com/user-attachments/assets/04f3c4f7-96f5-489b-99e5-eac736ea061b
 
 ---
 
