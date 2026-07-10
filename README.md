@@ -36,11 +36,11 @@ https://github.com/user-attachments/assets/04f3c4f7-96f5-489b-99e5-eac736ea061b
 
 | Home | Coin Details | Trading |
 |------|-------------|----------|
-| Add Screenshot | Add Screenshot | Add Screenshot |
+| ![Home](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/zenithHome.png) | ![Coin Details](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/Coin%20Detail%20SS.png) | ![Trade](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/Trading.png) |
 
-| Open Positions | Profile | Authentication |
-|----------------|---------|----------------|
-| Add Screenshot | Add Screenshot | Add Screenshot |
+| Open Positions | Profile | Authentication | Signup |
+|----------------|----------------|----------------|----------------|
+| ![Open Positions](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/Open%20Position.png) | ![Profile](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/Profile.png) | ![Welcome](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/welcome.png) | ![Signup](https://github.com/samyack/Zenith-Trading-iOS-App/blob/98997de4d2955f58f1bcf2924167dcfcbf4ce26c/ScreenshotsZenith/Signup.png)|
 
 ---
 
